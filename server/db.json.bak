@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Devonic Admin",
+      "email": "admin@devonic.local",
+      "password": "$2a$10$kC1MYqM5UZ4IgUrjz9Bi3u.vCZt7Z11j0olFckJKeJh4.Er69rV/a",
+      "role": "admin"
+    }
+  ],
+  "services": [/* backup of original services */]
+}

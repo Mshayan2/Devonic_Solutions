@@ -1,0 +1,380 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Devonic Admin",
+      "email": "admin@devonic.local",
+      "password": "$2a$10$ziZvwH1mubSvus.oJMfAz.OihWiHMFc4Lz981h1HaECHgrdMXecNa",
+      "role": "admin"
+    },
+    {
+      "id": "1769747531862",
+      "name": "jabir khan",
+      "email": "j@g.c",
+      "password": "$2a$10$ziZvwH1mubSvus.oJMfAz.OihWiHMFc4Lz981h1HaECHgrdMXecNa",
+      "role": "user"
+    },
+    {
+      "id": "1769899089411",
+      "name": "rahman",
+      "email": "rahman@gmail.com",
+      "password": "$2a$10$ziZvwH1mubSvus.oJMfAz.OihWiHMFc4Lz981h1HaECHgrdMXecNa",
+      "role": "admin"
+    },
+    {
+      "id": "1770972218872",
+      "name": "New Admin",
+      "email": "newadmin@example.com",
+      "password": "$2a$10$ziZvwH1mubSvus.oJMfAz.OihWiHMFc4Lz981h1HaECHgrdMXecNa",
+      "role": "admin"
+    }
+  ],
+  "services": [
+    {
+      "id": "seo",
+      "title": "SEO",
+      "summary": "Search engine optimization to increase visibility and traffic.",
+      "price": 0,
+      "iconName": "seo",
+      "description": ""
+    },
+    {
+      "id": "content-writing",
+      "title": "Content Writing",
+      "summary": "SEO-friendly content, blogs and copywriting.",
+      "price": 0,
+      "iconName": "edit",
+      "description": ""
+    },
+    {
+      "id": "digital-marketing",
+      "title": "Digital Marketing",
+      "summary": "Ads, social media and growth strategies.",
+      "price": 0,
+      "iconName": "activity",
+      "description": ""
+    },
+    {
+      "id": "web-dev",
+      "title": "Web Development",
+      "summary": "Modern, responsive web applications and websites.",
+      "price": 2400,
+      "iconName": "code",
+      "description": "React/Node.js or static site builds, responsive and performant."
+    },
+    {
+      "id": "graphic-design",
+      "title": "Graphic Designing",
+      "summary": "Branding, logos, marketing materials and UI design.",
+      "price": 800,
+      "iconName": "design",
+      "description": "Logo, visual identity, and high-fidelity UI design assets."
+    }
+  ],
+  "requests": [
+    {
+      "id": "1770872909031",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "gmail": "alice@gmail.com",
+      "whatsapp": "+923001234567",
+      "userId": null,
+      "serviceId": null,
+      "serviceTitle": null,
+      "message": "Hello from test",
+      "source": "contact",
+      "status": "new",
+      "createdAt": "2026-02-12T05:08:29.031Z"
+    },
+    {
+      "id": "1769747562616",
+      "name": "jabir khan",
+      "email": "j@g.c",
+      "userId": "1769747531862",
+      "serviceId": "svc-1",
+      "serviceTitle": "Web App Build",
+      "message": "need it in 500$",
+      "source": "dashboard",
+      "status": "reviewed",
+      "createdAt": "2026-01-30T04:32:42.616Z",
+      "projectId": "1769747669093"
+    },
+    {
+      "id": "1769899139347",
+      "type": "enrollment",
+      "courseId": "course-3",
+      "courseTitle": "Amazon FBA Complete Course",
+      "name": "rahman",
+      "email": "rahman@gmail.com",
+      "userId": "1769899089411",
+      "message": "rdgregedffdfbf",
+      "status": "converted",
+      "createdAt": "2026-01-31T22:38:59.347Z",
+      "projectId": "1769899226336"
+    },
+    {
+      "id": "1770189365002",
+      "type": "enrollment",
+      "courseId": "course-1",
+      "courseTitle": "Complete Web Development Bootcamp",
+      "name": "jabir khan",
+      "email": "j@g.c",
+      "userId": "1769747531862",
+      "message": "",
+      "status": "new",
+      "createdAt": "2026-02-04T07:16:05.002Z"
+    },
+    {
+      "id": "1770872909041",
+      "type": "enrollment",
+      "courseId": "course-1770872909017",
+      "courseTitle": "Test Course No Instructor",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "userId": null,
+      "message": "Enroll me",
+      "status": "new",
+      "createdAt": "2026-02-12T05:08:29.041Z"
+    },
+    {
+      "id": "1770971803831",
+      "type": "enrollment",
+      "courseId": "course-3",
+      "courseTitle": "Amazon FBA Complete Course",
+      "name": "Devonic Admin",
+      "email": "admin@devonic.local",
+      "userId": "1",
+      "message": "",
+      "status": "new",
+      "createdAt": "2026-02-13T08:36:43.831Z"
+    }
+  ],
+  "content": {
+    "home": {
+      "hero": {
+        "title": "Learn digital skills, deliver real projects",
+        "subtitle": "Short, practical services and guidance for teams and founders who want results fast.",
+        "primaryCta": {
+          "label": "Browse Services",
+          "href": "/services"
+        },
+        "secondaryCta": {
+          "label": "Request a Project",
+          "href": "/contact"
+        }
+      },
+      "highlights": [],
+      "cta": {
+        "title": "Ready to start your project?",
+        "subtitle": "Submit a request and we’ll reply within 24 hours.",
+        "primaryCta": {
+          "label": "Start a Request",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "projects": [
+    {
+      "id": "1769747640169",
+      "title": "Web App Build — jabir khan",
+      "description": "need it in 500$",
+      "serviceId": "svc-1",
+      "price": 450,
+      "ownerId": null,
+      "requestId": "1769747562616",
+      "status": "active",
+      "createdAt": "2026-01-30T04:34:00.170Z"
+    },
+    {
+      "id": "1769747669093",
+      "title": "Web App Build — jabir khan",
+      "description": "need it in 500$",
+      "serviceId": "svc-1",
+      "price": 450,
+      "ownerId": null,
+      "requestId": "1769747562616",
+      "status": "active",
+      "createdAt": "2026-01-30T04:34:29.093Z"
+    },
+    {
+      "id": "1769899226336",
+      "title": "Project for rahman",
+      "description": "rdgregedffdfbf",
+      "serviceId": null,
+      "price": 0,
+      "ownerId": null,
+      "requestId": "1769899139347",
+      "status": "active",
+      "createdAt": "2026-01-31T22:40:26.336Z"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "inst-1",
+      "userId": null,
+      "name": "Ali Hassan",
+      "email": "ali@devonic.local",
+      "title": "Senior Full-Stack Developer",
+      "bio": "Experienced developer with 8+ years in web and mobile development. Passionate about teaching and mentoring.",
+      "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=ali",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "MongoDB"
+      ],
+      "experience": [
+        {
+          "title": "Lead Developer",
+          "company": "Tech Corp",
+          "start": "2020",
+          "end": "Present",
+          "description": "Leading a team of 5 developers on enterprise projects."
+        },
+        {
+          "title": "Full-Stack Developer",
+          "company": "StartupXYZ",
+          "start": "2016",
+          "end": "2020",
+          "description": "Built MVPs for multiple startups."
+        }
+      ],
+      "projects": [],
+      "links": {
+        "website": "https://alihassan.dev",
+        "linkedin": "https://linkedin.com/in/alihassan",
+        "twitter": ""
+      },
+      "status": "published",
+      "createdAt": "2026-01-31T22:09:28.022Z"
+    },
+    {
+      "id": "inst-2",
+      "userId": null,
+      "name": "Sara Ahmed",
+      "email": "sara@devonic.local",
+      "title": "UI/UX Design Expert",
+      "bio": "Design professional specializing in user experience and brand identity. 6+ years creating intuitive digital experiences.",
+      "avatarUrl": "https://api.dicebear.com/7.x/avataaars/svg?seed=sara",
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "UI Design",
+        "UX Research",
+        "Prototyping"
+      ],
+      "experience": [
+        {
+          "title": "Senior Designer",
+          "company": "Design Studio",
+          "start": "2019",
+          "end": "Present",
+          "description": "Leading design for SaaS products."
+        }
+      ],
+      "projects": [],
+      "links": {
+        "website": "",
+        "linkedin": "https://linkedin.com/in/saraahmed",
+        "twitter": ""
+      },
+      "status": "published",
+      "createdAt": "2026-01-31T22:09:28.023Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "course-1",
+      "title": "Complete Web Development Bootcamp",
+      "summary": "Learn HTML, CSS, JavaScript, React, Node.js and build real projects.",
+      "description": "This comprehensive course covers everything from basic HTML to advanced React patterns. You will build 5 real-world projects and learn industry best practices.",
+      "price": 299,
+      "instructorId": "inst-1",
+      "duration": "12 weeks",
+      "capacity": 30,
+      "students": [],
+      "thumbnailUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+      "tags": [
+        "web",
+        "javascript",
+        "react",
+        "node"
+      ],
+      "published": true,
+      "createdAt": "2026-01-31T22:09:28.023Z",
+      "updatedAt": "2026-02-12T05:00:14.631Z"
+    },
+    {
+      "id": "course-2",
+      "title": "UI/UX Design Masterclass",
+      "summary": "Master Figma and create stunning user interfaces from scratch.",
+      "description": "Learn the complete design process from wireframing to high-fidelity prototypes. Includes portfolio projects.",
+      "price": 199,
+      "instructorId": "inst-2",
+      "duration": "8 weeks",
+      "capacity": 25,
+      "students": [],
+      "thumbnailUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800",
+      "tags": [
+        "design",
+        "figma",
+        "ui",
+        "ux"
+      ],
+      "published": true,
+      "createdAt": "2026-01-31T22:09:28.023Z",
+      "updatedAt": "2026-02-12T05:00:55.615Z"
+    },
+    {
+      "id": "course-3",
+      "title": "Amazon FBA Complete Course",
+      "summary": "Start your Amazon FBA business from zero to profitable.",
+      "description": "Step-by-step guide to launching and scaling an Amazon FBA business. Product research, sourcing, and marketing strategies included.",
+      "price": 149,
+      "instructorId": "inst-1",
+      "duration": "6 weeks",
+      "capacity": 50,
+      "students": [],
+      "thumbnailUrl": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=800",
+      "tags": [
+        "business",
+        "amazon",
+        "ecommerce"
+      ],
+      "published": true,
+      "createdAt": "2026-01-31T22:09:28.023Z"
+    },
+    {
+      "id": "course-1770872909017",
+      "title": "Test Course No Instructor",
+      "summary": "Test",
+      "description": "Desc",
+      "price": 0,
+      "instructorId": null,
+      "duration": "1 week",
+      "capacity": 10,
+      "students": [],
+      "thumbnailUrl": "",
+      "tags": [
+        "test"
+      ],
+      "published": true,
+      "createdAt": "2026-02-12T05:08:29.017Z"
+    }
+  ],
+  "invites": [
+    {
+      "id": "invite-1770972205224",
+      "email": "newadmin@example.com",
+      "role": "admin",
+      "token": null,
+      "status": "accepted",
+      "createdBy": "1",
+      "createdAt": "2026-02-13T08:43:25.224Z",
+      "expiresAt": "2026-02-20T08:43:25.224Z",
+      "acceptedAt": "2026-02-13T08:43:38.872Z"
+    }
+  ]
+}

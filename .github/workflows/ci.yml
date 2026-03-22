@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps
+        run: |
+          npm ci
+          cd server && npm ci && cd ..
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm run test -- --run
+      - name: Build
+        run: npm run build
+
+  e2e:
+    runs-on: ubuntu-latest
+    needs: build
+    services: {}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps (root & server)
+        run: |
+          npm ci
+          cd server && npm ci && cd ..
+      - name: Build frontend
+        run: npm run build
+      - name: Start backend
+        run: |
+          cd server
+          node index.js &
+          sleep 2
+      - name: Start preview (frontend)
+        run: |
+          npm run preview &
+          sleep 2
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
